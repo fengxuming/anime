@@ -1,0 +1,15 @@
+
+.Nav {
+    height: 30px;
+    background: rgba(33, 151, 245, 0.63);
+    line-height: 30px;
+    -webkit-box-sizing:content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+}
+.Nav-point{
+    float:left;
+    font-size:18px;
+    margin-left: 5px;
+}

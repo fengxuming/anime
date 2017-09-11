@@ -1,0 +1,15 @@
+.title{
+    font-size:14px;
+    white-space: nowrap;
+}
+.weekDay{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #e7d98d80;
+    color: #e7769a;
+}
+.bangumiCover{
+    height: 230px;
+    width: 180px;
+}
