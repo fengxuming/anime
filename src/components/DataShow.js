@@ -3,7 +3,9 @@
  */
 import React, { Component } from 'react';
 import './DataShow.css';
-
+import {
+    Link
+} from 'react-router-dom';
 
 class DataShow extends Component {
     constructor(props) {
@@ -177,6 +179,8 @@ class DataShow extends Component {
                         </div>
                     </div>
                 </div>
+
+                <Link to={"/from/"+this.props.bangumi._id}><button type="button" className="btn btn-block btn-primary">Primary</button></Link>
             </div>
         );
 

@@ -29,20 +29,20 @@ class BangumiInfo extends Component {
                     <div className="box-body box-profile">
                         <img className="profile-user-img img-responsive img-rounded" style={{width:"200px"}} src={"http://localhost:3004/"+this.props.bangumi.cover} alt="User profile picture"/>
 
-                        <h3 className="profile-username text-center">{this.props.bangumi.bangumiName}</h3>
+                        <h3 className="profile-username text-center">{this.props.bangumi.name}</h3>
 
-                        <p className="text-muted text-center">{this.props.bangumi.officialSite}</p>
+                        <p className="text-muted text-center">{this.props.bangumi.credit}</p>
 
                         <ul className="list-group list-group-unbordered">
                             <li className="list-group-item">
-                                <b>播出时间</b> <a className="pull-right">{this.props.bangumi.playerDay}</a>
+                                <b>播出时间</b> <a className="pull-right">{this.props.bangumi.startDate+"---"+this.props.bangumi.endDate}</a>
                             </li>
-                            <li className="list-group-item">
-                                <b>中国</b> <a className="pull-right">{this.props.bangumi.playerStationInChina}</a>
-                            </li>
-                            <li className="list-group-item">
-                                <b>日本</b> <a className="pull-right">{this.props.bangumi.playerStationInJapan}</a>
-                            </li>
+                            {/*<li className="list-group-item">*/}
+                                {/*<b>中国</b> <a className="pull-right">{this.props.bangumi.playerStationInChina}</a>*/}
+                            {/*</li>*/}
+                            {/*<li className="list-group-item">*/}
+                                {/*<b>日本</b> <a className="pull-right">{this.props.bangumi.playerStationInJapan}</a>*/}
+                            {/*</li>*/}
                         </ul>
 
                         <a href="#" className="btn btn-primary btn-block"><b>Follow</b></a>
