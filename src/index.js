@@ -1,29 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import "."
 import registerServiceWorker from './registerServiceWorker';
-import Content from "./components/Content";
-import Profile from "./components/Profile";
-import Form from "./components/Form";
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import {
-    BrowserRouter as Router,
-    Route
-} from 'react-router-dom'
+import App from "./App.js";
 
 ReactDOM.render(
-    <Router>
+
         <div>
-            <div>
-                <Header />
-                <Nav />
-                <Route exact path="/" component={Content}/>
-                <Route path="/index" component={Content}/>
-                <Route path="/profile/:bangumiId" component={Profile}/>
-                <Route path="/from/:bangumiId" component={Form}/>
-            </div>
+            {/*<div>*/}
+                {/*<Header />*/}
+                {/*<Nav />*/}
+                    {/*<Route path="/index" component={Content}/>*/}
+                    {/*<Route path="/profile/:bangumiId" component={Profile}/>*/}
+                    {/*<Route path="/from/:bangumiId" component={Form}/>*/}
+            {/*</div>*/}
+            <App/>
         </div>
-    </Router>,
+  ,
     document.getElementById('root'));
 registerServiceWorker();
